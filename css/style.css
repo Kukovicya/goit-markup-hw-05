@@ -487,6 +487,7 @@ span {
 }
 
 .portfolio-link {
+  /* position: relative; */
   display: block;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
@@ -499,7 +500,7 @@ span {
     0px 1px 1px 0px #0000001f;
 }
 
-.action::before {
+.action::after {
   display: inline-block;
   content: "";
   position: absolute;
@@ -511,10 +512,10 @@ span {
   transform: translateX(-100%);
 }
 .action {
-  position: relative;
+  position: absolute;
 }
 
-.portfolio-link:hover .action::before {
+.portfolio-link:hover .action::after {
   transform: translateX(0%);
 }
 
@@ -526,6 +527,9 @@ span {
   margin-bottom: 30px;
 }
 
+.section-example a {
+  color: #212121;
+}
 .section-example .title {
   /* padding: 20px 24px 4px; */
   font-weight: bold;
@@ -533,6 +537,7 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .section-example .text {
   margin-top: 4px;
   font-size: 16px;
